@@ -44,8 +44,14 @@ header{
     display: flex;
     margin-top: 5%;
 }
-#img-wrapper img{
-    margin-left: -50px;
+
+.main-img{
+    background-image:url(images/image-computer.png); 
+    width: 800px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -2%;
 }
 .text-wrapper{
     width: 50%;
@@ -163,79 +169,126 @@ width: 100%;
   .main-text{
     width: 50%;
   }
-@media (max-width:740px){
+  @media (max-width: 740px) {
+    /* მობილურ მოწყობილობებზე */
+    #main-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column; /* სვეტებად მოწყობა */
+        justify-content: center;
+        align-items: center; /* შუაში განლაგება */
+        margin-top: 15%;
+    }
+
+    #img-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* სვეტებად მოწყობა */
+        align-items: center; /* შუაში განლაგება */
+        margin-top: 5%;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column; /* სვეტებად მოწყობა */
+        align-items: center; /* შუაში განლაგება */
+        margin-top: 20%; /* საკმარისი ადგილი */
+    }
+
+    .text-wrapper div {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* შუაში განლაგება */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-img {
+        background-image: url(images/image-computer.png);
+        width: 270px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 15%;
+        display: block;
+    }
+
+    #footer-wrapper {
+        flex-direction: column; /* სვეტებად მოწყობა */
+        align-items: center; /* შუაში განლაგება */
+    }
+    footer{
+        display: flex;
+        margin-top: 5%;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-button {
+        display: flex;
+        flex-direction: column; /* სვეტებად მოწყობა */
+        align-items: center; /* შუაში განლაგება */
+    }
+
+    .main-text {
+        width: 70%;
+    }
+    #main-wrapper-four{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5%;
+        align-items: center;
+    }
+    #main-wrapper-four img{
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 180px;
+        cursor: pointer;
+    }
     #main-two-two{
+        display: flex;
         flex-direction: column;
-      
+        align-items: center;
+        justify-content: center;
+        width: 70%;
     }
-    #footer-wrapper{
-        flex-direction: column;
-    }
-    #header-wrapper{
+    #maaii-wrapper{
         display: flex;
         align-items: center;
         width: 100%;
         flex-direction: column;
-        text-align: center;
+        margin-top: 5%;
+        justify-content: baseline;
        
     }
-    .header-button {
-        height: max-content;
-        border-radius: 20px;
-        border: 1px solid ;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    #maaii-wrapper h1{
+        font-size: 20px;
     }
-    .header-button button{
+    .main-button {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-button button{
+        width: 200px;
         height: 40px;
         border-radius: 20px;
         border: 1px solid ;
         color: white;
         cursor: pointer;
     }
-    .main-text{
-        width: 70%;
-      }
-      #main-wrapper{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 15%;
-    }
-    #main-wrapper h1{
-        font-size: 25px;
-    }
-    #img-wrapper img{
-      
-        width: 100%;
-        display: flex;
-        
-    }
-    #img-wrapper{
-        width: 100%;
-        display: flex;
-        margin-top: 5%;
-       align-items: center;
-        
-    }
-    .text-wrapper{
-        width: 100%;
-        margin-left: 0%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 55%;
-        align-items: start;
-       
-    }
-    .text-wrapper p{
-        width: 100%;
-    }
     main {
         min-height: calc(100vh - 250px);
         margin-top: 50%;
+    }
+    .fotter{
+        visibility: hidden;
     }
 }
