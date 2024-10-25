@@ -1,0 +1,241 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Bai Jamjuree;
+}
+html{
+    box-sizing: border-box;
+}
+main {
+    min-height: calc(100vh - 250px);
+    margin-top: 15%;
+}
+/*-----------------------------------Header-----------------------------*/
+header{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/bg-header-desktop.png);
+}
+#header-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.header-button button{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid ;
+    color: white;
+    cursor: pointer;
+}
+/*------------------------------------main-wrapper----------------------------------*/
+#main-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#img-wrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+#img-wrapper img{
+    margin-left: -50px;
+}
+.text-wrapper{
+    width: 50%;
+    margin-left: 10%;
+    text-align: start;
+   
+}
+.text-wrapper p{
+    width: 30%;
+}
+
+#main-wrapper-two{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+   
+}
+#wrapper-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+#main-main{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+   
+}
+#main-two-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.img-one{
+    margin: auto;
+}
+.img-wrapper-two{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-left: 2%;
+}
+#main-wrapper-four{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+#main-wrapper-four img{
+    margin-left: 6%;
+    width: 180px;
+    cursor: pointer;
+}
+#maaii-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5%;
+   
+}
+.main-button button{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid ;
+    color: white;
+    cursor: pointer;
+}
+
+/*-------------------------------------------FOTTERRRRRR-----------------*/
+footer{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+#footer-wrapper{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+    
+}
+.footer-clasic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+
+}
+.footer-clasic a{
+    margin-top: 15%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+.footer-icons{
+    width: 30%;
+   
+}
+.footer-icons img{
+    margin-left: 10%;
+   
+}
+.bai-jamjuree-regular {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .main-text{
+    width: 50%;
+  }
+@media (max-width:740px){
+    #main-two-two{
+        flex-direction: column;
+      
+    }
+    #footer-wrapper{
+        flex-direction: column;
+    }
+    #header-wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    .header-button {
+        height: max-content;
+        border-radius: 20px;
+        border: 1px solid ;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-button button{
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid ;
+        color: white;
+        cursor: pointer;
+    }
+    .main-text{
+        width: 70%;
+      }
+      #main-wrapper{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    #main-wrapper h1{
+        font-size: 25px;
+    }
+    #img-wrapper img{
+      
+        width: 100%;
+        display: flex;
+        
+    }
+    #img-wrapper{
+        width: 100%;
+        display: flex;
+        margin-top: 5%;
+       align-items: center;
+        
+    }
+    .text-wrapper{
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 55%;
+        align-items: start;
+       
+    }
+    .text-wrapper p{
+        width: 100%;
+    }
+    main {
+        min-height: calc(100vh - 250px);
+        margin-top: 50%;
+    }
+}
